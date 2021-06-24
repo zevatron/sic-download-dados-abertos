@@ -4,6 +4,7 @@ import io
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from user_agent import generate_user_agent
 from time import sleep
 
@@ -28,7 +29,11 @@ options.add_argument('--disable-dev-shm-usage')
 
 for url in urls:
 
-	driver = webdriver.Chrome(options = options)
+	# driver = webdriver.Chrome(options = options)
+	driver = webdriver.Remote(
+		command_executor='http://127.0.0.1:4444/wd/hub',
+		desired_capabilities=DesiredCapabilities.CHROME,
+		options = options)
 	driver.delete_all_cookies()
 	driver.set_window_size(1061, 701)
 	driver.get(urlPortal + url)
