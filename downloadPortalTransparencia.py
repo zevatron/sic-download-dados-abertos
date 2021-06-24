@@ -10,7 +10,7 @@ from time import sleep
 
 urlPortal = 'http://www.portaltransparencia.gov.br/download-de-dados/'
 urls = ["ceis","cepim","cnep"]
-dirExtract = 'G:\\QLIKVIEW\\SIC\\PORTAL'
+dirExtract = 'PORTAL/'
 
 userAgent = generate_user_agent(device_type="desktop")
 
