@@ -1,0 +1,42 @@
+{
+  "id": "615f4d0a-d5b9-426b-bf7d-b2024ccde59c",
+  "version": "2.0",
+  "name": "Portal da Transparência",
+  "url": "http://www.portaltransparencia.gov.br",
+  "tests": [{
+    "id": "ac605ddd-5baa-4cfd-af00-e30ee84453d0",
+    "name": "Clik Download",
+    "commands": [{
+      "id": "949a9cf1-5744-4958-839b-fc2285bdfb05",
+      "comment": "",
+      "command": "open",
+      "target": "/download-de-dados/ceis/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64499d7a-ebca-43bf-846e-d22e09749143",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1061x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed76b667-fbef-439a-b688-4483e1ce6c26",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@id='link-unico']/li/a",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b7792eb5-9b2f-414f-b4f6-8ce28b4edf9b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ac605ddd-5baa-4cfd-af00-e30ee84453d0"]
+  }],
+  "urls": ["http://www.portaltransparencia.gov.br/"],
+  "plugins": []
+}

@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.csv
+*.ppt*
+*.xls*
+*.png
+*.bat
+*.ps1
+*.exe
+*.ppk
+notas.md
+*/
